@@ -3,4 +3,101 @@
     width: $width;
  }
 
+ @mixin flex($display, $justifycontent, $alignitems) {
+	display: $display;
+	justify-content: $justifycontent;
+	align-items: $alignitems;
+
+}
+
+@mixin grid ($display, $justifyitems, $alignitems){
+    display: $grid;
+    justify-items: $stretch;
+    align-items: $stretch;
+}
+
+/*---inicio header---*/
+
+.container__section1{
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    @include sizes(100vw, 100vh);
+    background-image: linear-gradient(to top, white, black);
+
+    
+}   
+.container__1{
+    @include sizes(100vw, 24vh);
+}
+
+.titulo{
+    
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    color: rgb(255, 255, 255);
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    text-shadow: 10px 3px 2px #696;
+    height: 16vh;
+}
+.nombre{
+    font-size: 32px;
+}
+
+.lista{
+    @include sizes(100vw, 10vh);
+   
+}
+.lista__uno{
+    grid-row: 2 / 3;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+.contenido {
+    
+    color: rgba(255, 255, 255, 0.836);
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    text-decoration: underline;
+   
+}
+.lista ul {
+    background-color: none;
+    
+    
+}
+.lista ul li {
+    position: relative;   
+}
  
+.lista ul li a:hover {
+    color: rgb(97, 97, 97);   
+}
+
+.lista ul ul {
+    display: none;
+    position: absolute;
+      
+}
+
+.lista ul li:hover>ul {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: flex-end;
+    padding-left: 50px;
+    width: 40vw;
+    z-index: 1;
+
+}
+/*---fin header---*/
