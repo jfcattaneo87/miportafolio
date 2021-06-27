@@ -1,0 +1,63 @@
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ @mixin flex($display, $direction, $justifycontent, $alignitems, $aligncontent) {
+
+	display: $display;
+    flex-direction: $direction;
+	justify-content: $justifycontent;
+	align-items: $alignitems;
+    align-content: $aligncontent;
+}
+/*---inicio contacto---*/
+
+.contacto{
+    @include sizes(100vw, 75vh);
+}
+.formulario{
+    height: 75vh;
+    @include flex(flex, unset, center, center, center);
+}
+
+.cuadro{
+    @include flex(flex, column, center, center, center);
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;  
+}
+#exampleFormControlTextarea1{
+    resize: none;
+    width: 185px;
+}
+.enviar{
+    background-color: black;
+    color: white;
+    @include sizes(100vw, 30vh);
+}
+/*---fin contacto---*/
+/*---inicio footer---*/
+.footer__icons{
+grid-row: 4 / 4;
+@include flex(flex, row, space-evenly, center, stretch);
+@include sizes(100vw, 5vh);
+transition: 1s all;
+animation-duration: 1s;
+z-index: 1;
+background: black;
+}
+.icons{
+width: 5vw;       
+}
+.footer__icons .icons{
+transition: 1s all;
+animation-duration: 1s linear infinite;
+}
+.icons:hover{
+transform: rotateZ(360deg);
+-webkit-transform: rotatez(360deg);
+-moz-transform: rotatez(360deg);
+-ms-transform: rotatez(360deg);
+-o-transform: rotatez(360deg);
+}
+/*---fin footer---*/

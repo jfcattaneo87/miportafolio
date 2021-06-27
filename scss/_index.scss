@@ -2,7 +2,6 @@
     height: $height;
     width: $width;
  }
-
  @mixin flex($display, $direction, $justifycontent, $alignitems, $aligncontent) {
 
 	display: $display;
@@ -11,9 +10,7 @@
 	align-items: $alignitems;
     align-content: $aligncontent;
 }
-
 /*---inicio header---*/
-
 .container__section1{
     display: grid;
     grid-template-rows: repeat(4, auto);
@@ -23,9 +20,7 @@
 .container__1{
     @include sizes(100vw, 24vh);
 }
-
 .titulo{
-    
     grid-row: 1 / 2;
     @include flex(flex, row, center, center, center);
     color: rgb(255, 255, 255);
@@ -39,10 +34,8 @@
 .nombre{
     font-size: 32px;
 }
-
 .lista{
-    @include sizes(100vw, 10vh);
-   
+    @include sizes(100vw, 10vh); 
 }
 .lista__uno{
     grid-row: 2 / 3;
@@ -50,7 +43,6 @@
     @include flex(flex, column, center, center);  
 }
 .contenido {
-    
     color: rgba(255, 255, 255, 0.836);
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
@@ -58,8 +50,7 @@
     text-decoration: underline;   
 }
 .lista ul {
-    background-color: none;
-   
+    background-color: none;  
 }
 .lista ul li {
     position: relative;   
@@ -69,8 +60,7 @@
 }
 .lista ul ul {
     display: none;
-    position: absolute;
-      
+    position: absolute;     
 }
 .lista ul li:hover>ul {
     @include flex(flex, column, flex-end, unset, flex-end);  
@@ -79,15 +69,13 @@
     z-index: 1;
 }
 /*---fin header---*/
-
 /*---inicio banner---*/
 .container__frase{
     grid-row: 3 / 4;
     position: relative;
     @include sizes(100vw, 70vh);
     display: flex;
-    padding-bottom: 80px;
-    
+    padding-bottom: 80px;    
 }
 .frase{
     position: relative;

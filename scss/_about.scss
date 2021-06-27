@@ -1,0 +1,55 @@
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ @mixin flex($display, $direction, $justifycontent, $alignitems, $aligncontent) {
+
+	display: $display;
+    flex-direction: $direction;
+	justify-content: $justifycontent;
+	align-items: $alignitems;
+    align-content: $aligncontent;
+}
+ /*--- inicio about ---*/
+ .about{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    @include sizes(100vw, 65vh);
+}
+.imagen{
+    @include flex(flex, unset, flex-start, center);
+    @include sizes(40vw, 65vh);   
+}
+
+.imagen__portafolio{
+    @include sizes(auto, 35vh); 
+}
+.texto__about{
+    @include flex(flex, unset, center, center);
+    @include sizes(60vw, 65vh); 
+}
+.texto__about__informacion{
+    background: black;
+    @include flex(flex, unset, center, center);
+    @include sizes(60vw, 35vh);
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 25px;
+}
+.button__cv{
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+    background: white;   
+}
+.button__cv__texto{
+    @include flex(flex, unset, center, center, center);
+    color: black;
+    background: white;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+  /*---fin about---*/
+
