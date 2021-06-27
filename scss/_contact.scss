@@ -3,7 +3,6 @@
     width: $width;
  }
  @mixin flex($display, $direction, $justifycontent, $alignitems, $aligncontent) {
-
 	display: $display;
     flex-direction: $direction;
 	justify-content: $justifycontent;

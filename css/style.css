@@ -1,11 +1,9 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 /*---inicio header---*/
 .container__section1{
@@ -13,18 +11,13 @@
     grid-template-rows: repeat(4, auto);
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to top, white, black);
-
-    
+    background-image: linear-gradient(to top, white, black);   
 }   
 .container__1{
     width: 100vw;
-    height: 24vh;
-    
+    height: 24vh;   
 }
-
 .titulo{
-    
     grid-row: 1 / 2;
     display: flex;
     flex-direction: row;
@@ -56,33 +49,25 @@
     justify-content: center;    
 }
 .contenido {
-    
     color: rgba(255, 255, 255, 0.836);
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
-    text-decoration: underline;
-   
+    text-decoration: underline; 
 }
 .lista ul {
-    background-color: none;
-    
-    
+    background-color: none;  
 }
 .lista ul li {
     position: relative;   
 }
- 
 .lista ul li a:hover {
     color: rgb(97, 97, 97);   
 }
-
 .lista ul ul {
     display: none;
-    position: absolute;
-      
+    position: absolute;    
 }
-
 .lista ul li:hover>ul {
     display: flex;
     flex-direction: column;
@@ -91,7 +76,6 @@
     padding-left: 50px;
     width: 40vw;
     z-index: 1;
-
 }
 /*---fin header---*/
 /*---inicio banner---*/
@@ -101,8 +85,7 @@
     width: 100vw;
     height: 70vh;
     display: flex;
-    padding-bottom: 80px;
-    
+    padding-bottom: 80px;   
 }
 .frase{
     position: relative;
@@ -139,35 +122,27 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     width: 100vw;
-    height: 65vh;
-    
+    height: 65vh;   
 }
 .imagen{
     display: flex;
     justify-content:flex-start;
     align-items: center;
     width: 40vw;
-    height: 65vh;
-       
+    height: 65vh;      
 }
-
 .imagen__portafolio{
-
     width: auto;
-    height: 35vh;
-   
+    height: 35vh;   
 }
 .texto__about{
-
     display: flex;
     align-items: center;
     justify-content: center;
     width: 60vw;
-    height: 65vh;
-    
+    height: 65vh;   
 }
 .texto__about__informacion{
-
     background: black;
     display: flex;
     justify-content: center;
@@ -181,15 +156,12 @@
     padding: 25px;
 }
 .button__cv{
-
     display: flex;
     justify-content: center;
     height: 5vh;
-    background: white;
-    
+    background: white;  
 }
 .button__cv__texto{
-
     display: flex;
     align-content: center;
     justify-content: center;
@@ -199,57 +171,40 @@
     font-family: sans-serif;
     font-size: 1.2rem;
 }
-
-
   /*---fin about---*/
   /*---inicio work---*/
 .work{
-
     display: grid;
     grid-template-columns: 100vw;
     width: 100vw;
     height: 71vh;
-    padding-top: 65px;
-    
+    padding-top: 65px;   
 }
-
 .imagen_proyectos{
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 20vh;
-    
-    
+    height: 20vh;  
 }
 .imagen_proyectos:hover { filter: opacity(.1); -webkit-filter: opacity(.1); }
-
 .imagen__proyectos__1{
-
     width: 50vw;
     height: auto;
     border: solid 2px #696 ;
-    border-radius: 500px ;
-    
+    border-radius: 500px ;  
 }
-
-
 .imagen_servicios{
-
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
     width: 100vw;
     height: 20vh;
-
 }
 .imagen_servicios:hover { filter: opacity(.1); -webkit-filter: opacity(.1); }
-
 .imagen__servicios__1{
-    
     width: 50vw;
     border: solid 2px #696 ;
     border-radius: 500px ;
@@ -258,32 +213,22 @@
     -ms-border-radius: 500px ;
     -o-border-radius: 500px ;
 }
-
 .titulo__proyectos{
-
     width: 50vw;
     height: 15vh;
     display: flex;
     align-content: center;
     justify-content: center;
-    align-items: center;
-    
-    
-    
-    
+    align-items: center;  
 }
 .titulo__productos__01{
-
     text-decoration: none;
     color: white;
     font-size: 30px;
     font-family: sans-serif;
     text-shadow: 10px 3px 2px #696;
-
 }
-
 .titulo__servicios{
-
     width: 50vw;
     height: 15vh;
     display: flex;
@@ -291,45 +236,31 @@
     justify-content: center;
     align-items: center;
 }
-
 .titulo__servicios__01{
-
     text-decoration: none;
     color: white;
     font-size: 30px;
     font-family: sans-serif;
     text-shadow: 10px 3px 2px #696;
-
 }
-
     /*---fin work---*/
     /*---inicio proyectos---*/
 .gallery-container{
-
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: 35vh;
     padding: 20px ;
     grid-gap: 10px;
     background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(255, 255, 255));
-
-
 }
-
 .gallery__item{
     position: relative;
-    
 }
-
-
 .gallery__img{
-
     width: 100%;
     height: 100%;
-    object-fit: cover;
-   
+    object-fit: cover; 
 }
-
 .gallery__title{
     position: absolute;
     display: flex;
@@ -342,31 +273,19 @@
     color: white;
     background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1));
     width: 100%;
-
-
 }
-
 .gallery__item:nth-child(1){
-
     grid-column-start: span 1;
 }
-
-
-   
-
      /*---fin proyectos---*/
       /*---inicio servicio---*/
       .icon-container{
-
         display: grid;
         grid-template-columns: repeat(1, 3fr);
         height: 150vh;
         grid-gap: 10px;
         background-image: linear-gradient(to top, rgb(94, 94, 94), rgb(0, 0, 0));
-
-
     }
-
     .gallery__icon{
         position: relative;
         display: flex;
@@ -374,25 +293,18 @@
         align-items: center;
         justify-content: center;
         align-content: center;
-        height: 30vh;
-        
+        height: 30vh;   
     }
-
     .gallery__img__png{
-
         width: 35%;
-        object-fit: cover;
-          
+        object-fit: cover;     
     }
-
     .gallery__img__png:hover{
-
         border-radius:50%;
         -webkit-border-radius:50%;
         box-shadow: 0px 0px 15px 15px #696;
         -webkit-box-shadow: 0px 0px 15px 15px #696;
 }
-
     .gallery__title__icon{
         position: absolute;
         display: flex;
@@ -404,31 +316,19 @@
         width: 100%;
         font-size: 2rem;
         font-family: sans-serif;
-
     }
-
     .gallery__icon:nth-child(1){
-
         grid-column-start: span 1;
     }
-
-
     .gallery__icon:nth-child(2){
-
         grid-column-start: span 1;
-       
     }
-
     .gallery__icon:nth-child(3){
-
         grid-row-start: span 1;
     }
-
     .gallery__icon:nth-child(4){
-
         grid-column-start: span 1;
     }
-    
     .text__service{
         position: absolute;
         display: flex;
@@ -441,32 +341,22 @@
         padding-bottom: 10px;
         text-align :center;
         font-size: 1.2rem;
-        font-family: sans-serif;
-        
-        
+        font-family: sans-serif;      
     }
     /*---fin servicio---*/
-     
     /*---inicio contacto---*/
-
     .contacto{
         width: 100vw;
         height: 75vh;
-
     }
     .formulario{
-
         height: 75vh;
         display: flex;
         justify-content: center;
         align-items: center;
         align-content: center;
-        
-
     }
-
     .cuadro{
-
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -474,24 +364,18 @@
         align-content: center;
         text-decoration: none;
         font-family: sans-serif;
-        font-weight: bold;
-        
+        font-weight: bold;   
     }
-
     #exampleFormControlTextarea1{
-
         resize: none;
         width: 185px;
     }
-
     .enviar{
-
         background-color: black;
         color: white;
         width: 100px;
         height: 30px;
     }
-
     /*---fin contacto---*/
   /*---inicio footer---*/
 .footer__icons{
@@ -507,17 +391,13 @@
     animation-duration: 1s;
     z-index: 1;
     background: black;
-
 }
 .icons{
-    
     width: 5vw;       
 }
-
 .footer__icons .icons{
     transition: 1s all;
     animation-duration: 1s linear infinite;
-
 }
 .icons:hover{
     transform: rotateZ(360deg);
@@ -527,7 +407,6 @@
     -o-transform: rotatez(360deg);
 }
 /*---fin footer---*/
-
 @media (min-width:480px) and (max-width:768px){
 /*---inicio header---*/
     .container__section1{
@@ -536,123 +415,77 @@
         width: 100vw;
         height: 100vh;
         background:black
-
     }
     .titulo{
-
         text-shadow: 10px 3px 2px #696;
         letter-spacing: 20px;
-        word-spacing: 5px;
-        
+        word-spacing: 5px;   
     }
     .nombre{
-
         font-size: 35px;
     }
-
     .lista__uno{
-        
         width: 100vw;
         flex-direction: row;
         align-items:center;
         justify-content:space-around;  
         align-content: space-between;  
-
     }
     .contenido {
-
         font-size: 1.2rem;
     }
     /*---fin header---*/
      /*---inicio work---*/
     .work{
-
-        
         width: 100vw;
         height: 110vh;
         padding-top: 65px;
-        background: black;
-        
+        background: black;  
     }
-
     .imagen_proyectos{
-
         width: 100vw;
-        height: 35vh;
-        
-        
+        height: 35vh;  
     }
-
     .imagen__proyectos__1{
-
         width: 50vw;
-        
     }
-
-
     .imagen_servicios{
-
         width: 100vw;
         height: 35vh;
-
     }
-
     .imagen__servicios__1{
-        
         width: 50vw;
-        
-    
     }
     .titulo__proyectos{
-
         width: 50vw;
         height: 15vh;
-    
     }
     .titulo__productos__01{
-
-        font-size: 35px;
-        
+        font-size: 35px; 
     }
-
     .titulo__servicios{
-
         width: 50vw;
-        height: 15vh;
-        
+        height: 15vh; 
     }
-
     .titulo__servicios__01{
-
         font-size: 35px;   
-
     }
-
     /*---fin work---*/
     /*---inicio proyectos---*/
-
     .gallery-container{
-
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-auto-rows: 60vh;
         padding: 20px ;
         grid-gap: 10px;
-    
-    
     }
-    
     .gallery__item{
         position: relative;
     }
-    
     .gallery__img{
-    
         width: 100%;
         height: 100%;
-        object-fit: cover;
-    
-        
+        object-fit: cover;    
     }
     .gallery__title{
         position: absolute;
@@ -660,50 +493,32 @@
         color: white;
         background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1));
         width: 100%;
-    
-    
     }
-    
     .gallery__item:nth-child(1){
-    
         grid-column-start: span 1;
     }
-    
-
     /*---fin proyectos---*/
       /*---inicio servicio---*/
       .icon-container{
-
         display: grid;
         grid-template-columns: repeat(1, 3fr);
         height: 170vh;
         grid-gap: 10px;
         background-image: linear-gradient(to top, rgb(94, 94, 94), rgb(0, 0, 0));
-
-
     }
-
     .gallery__icon{
-
-        height: 40vh;
-        
+        height: 40vh;   
     }
-
     .gallery__img__png{
-
         width: 35%;
-        object-fit: cover;
-          
+        object-fit: cover;      
     }
-
     .gallery__img__png:hover{
-
         border-radius:50%;
         -webkit-border-radius:50%;
         box-shadow: 0px 0px 15px 15px #696;
         -webkit-box-shadow: 0px 0px 15px 15px #696;
 }
-
     .gallery__title__icon{
         position: absolute;
         display: flex;
@@ -713,32 +528,19 @@
         color: white;
         margin: 20px;
         width: 100%;
-        
-
     }
-
     .gallery__icon:nth-child(1){
-
         grid-column-start: span 1;
     }
-
-
     .gallery__icon:nth-child(2){
-
-        grid-column-start: span 1;
-       
+        grid-column-start: span 1;   
     }
-
     .gallery__icon:nth-child(3){
-
         grid-row-start: span 1;
     }
-
     .gallery__icon:nth-child(4){
-
         grid-column-start: span 1;
     }
-    
     .text__service{
         position: absolute;
         display: flex;
@@ -751,93 +553,67 @@
         padding-bottom: 10px;
         text-align: center;
         font-size:1.2rem;
-        font-family: sans-serif;
-        
-        
+        font-family: sans-serif;   
     }
     /*---fin servicio---*/
      /*---inicio contacto---*/
-
      .contacto{
         width: 100vw;
         height: 75vh;
-
     }
     .formulario{
-
         height: 75vh;
-        width: 100vw;
-        
-
+        width: 100vw;   
     }
-
     .cuadro{
-
         color: white;
-        width: 40vw;
-        
+        width: 40vw;   
     }
-
     .form-control{
         width: 50vw;
         height: 3vh;
     }
-
     .form-label{
-
         display: flex;
         align-content: center;
         justify-content: center;
     }
-
     #exampleFormControlTextarea1{
-
         resize: none;
         width: 50vw;
     }
-
     .enviar{
-
         font-family: sans-serif;
         background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
         width: 100px;
         height: 30px;
     }
-
     /*---fin contacto---*/
 }
-
-
 @media (min-width:769px) and (max-width:1023px){
     /*---inicio header---*/
     .container__section1{
-
         display: grid;
         grid-template-rows: repeat(4, auto);
         width: 100vw;
         height: 100vh;
         background:black
-
     }
     .titulo{
-
         text-shadow: 10px 3px 2px #696;
         letter-spacing: 20px;
-        word-spacing: 5px;
-        
+        word-spacing: 5px;    
     }
     .nombre{
         font-size: 40px;
     }
     .lista__uno{
-        
         width: 100vw;
         flex-direction: row;
         align-items:center;
         justify-content:space-around;  
         align-content: space-between;  
-
     }
     .contenido {
         font-size: 1.0rem;
@@ -845,12 +621,9 @@
     /*---fin header---*/
     /*---inicio banner---*/
     .container__frase{
-
         display: flex;
         align-items: center;
-        justify-content: center;
-        
-        
+        justify-content: center;   
     }
     .frase{
         font-size: 4.0em;   
@@ -858,141 +631,85 @@
     /*---fin banner---*/
      /*--- inicio about ---*/
     .about{
-
-        
         width: 100vw;
-        height: 65vh;
-        
+        height: 65vh;  
     }
     .imagen{
-    
         width: 25vw;
         height: 65vh;
     }
-
     .imagen__portafolio{
         height: 50vh;
         background: white;
-        border-radius: 10px;
-        
+        border-radius: 10px;  
     }
     .texto__about{
-
-        
         width: 65vw;
-        height: 65vh;
-        
+        height: 65vh;    
     }
     .texto__about__informacion{
-
         width: 50vw;
         height: 35vh;
         font-size: 1.4rem;
         padding: 25px;
     }
-
     .button__cv__texto{
-
         font-size: 2rem;
     }
     /*---fin about---*/
     /*---inicio work---*/
     .work{
-
         display: grid;
         grid-template-columns: 50vw 50vw;
         grid-template-rows: 50vh 50vh;
         width: 100vw;
         height: 70vh;
-        padding-top: 65px;
-        
+        padding-top: 65px;   
     }
-
     .imagen_proyectos{
-
-        
         width: 50vw;
-        height: 50vh;
-        
-        
+        height: 50vh;   
     }
-    
     .imagen__proyectos__1{
-
-        width: 30vw;
-        
+        width: 30vw; 
     }
-
-
     .imagen_servicios{
-
-        
         width: 50vw;
         height: 50vh;
-
     }
-
     .imagen__servicios__1{
-        
-        width: 30vw;
-        
+        width: 30vw;  
     }
-
     .titulo__proyectos{
-
         width: 50vw;
-        height: 15vh;
-        
-        
+        height: 15vh;  
     }
     .titulo__productos__01{
-
-        
         font-size: 50px;
-        
-
     }
-
     .titulo__servicios{
-
         width: 50vw;
-        height: 15vh;
-        
+        height: 15vh;  
     }
-
     .titulo__servicios__01{
-
-    
         font-size: 50px;
-        
-
     }
-
     /*---fin work---*/
     /*---inicio proyectos---*/
-
     .gallery-container{
-
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: 60vh;
         padding: 20px ;
         grid-gap: 10px;
-    
-    
     }
-    
     .gallery__item{
         position: relative;
     }
-    
     .gallery__img{
-    
         width: 100%;
         height: 100%;
-        object-fit: cover;
-    
-        
+        object-fit: cover;   
     }
     .gallery__title{
         position: absolute;
@@ -1000,71 +717,47 @@
         color: white;
         background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1));
         width: 100%;
-    
-    
     }
-    
     .gallery__item:nth-child(1){
-    
         grid-column-start: span 2;
     }
     .gallery__item:nth-child(2){
-    
         grid-column-start: span 2;
     }
     .gallery__item:nth-child(3){
-    
         grid-column-start: span 1;
     }
     .gallery__item:nth-child(4){
-    
         grid-column-start: span 2;
     }
     .gallery__item:nth-child(6){
-    
         grid-column-start: span 3;
     }
     .gallery__item:nth-child(9){
-    
         grid-column-start: span 3;
     }
-
-
-
     /*---fin proyectos---*/
           /*---inicio servicio---*/
           .icon-container{
-
             display: grid;
             grid-template-columns: repeat(2, 2fr);
             height: 90vh;
             grid-gap: 10px;
             background-image: linear-gradient(to top, rgb(94, 94, 94), rgb(0, 0, 0));
-    
-    
         }
-    
         .gallery__icon{
-    
-            height: 35vh;
-            
+            height: 35vh;   
         }
-    
         .gallery__img__png{
-    
             width: 35%;
-            object-fit: cover;
-              
+            object-fit: cover;   
         }
-    
         .gallery__img__png:hover{
-    
             border-radius:50%;
             -webkit-border-radius:50%;
             box-shadow: 0px 0px 15px 15px #696;
             -webkit-box-shadow: 0px 0px 15px 15px #696;
     }
-    
         .gallery__title__icon{
             position: absolute;
             display: flex;
@@ -1074,32 +767,20 @@
             color: white;
             margin: 20px;
             width: 100%;
-            
-    
         }
-    
         .gallery__icon:nth-child(1){
-    
             grid-column-start: span 1;
         }
-    
-    
         .gallery__icon:nth-child(2){
     
-            grid-column-start: span 1;
-           
+            grid-column-start: span 1;  
         }
-    
         .gallery__icon:nth-child(3){
-    
             grid-row-start: span 1;
         }
-    
         .gallery__icon:nth-child(4){
-    
             grid-column-start: span 1;
         }
-        
         .text__service{
             position: absolute;
             display: flex;
@@ -1112,67 +793,46 @@
             padding-bottom: 10px;
             text-align: center;
             font-size:1.2rem;
-            font-family: sans-serif;
-            
-            
+            font-family: sans-serif;    
         }
         /*---fin servicio---*/
      /*---inicio contacto---*/
-
      .contacto{
         width: 100vw;
         height: 75vh;
-
     }
     .formulario{
-
         height: 75vh;
         width: 100vw;
-        
-
     }
-
     .cuadro{
-
         color: white;
-        width: 40vw;
-        
+        width: 40vw;  
     }
-
     .form-control{
         width: 50vw;
         height: 3vh;
     }
-
     .form-label{
-
         display: flex;
         align-content: center;
         justify-content: center;
     }
-
     #exampleFormControlTextarea1{
-
         resize: none;
         width: 50vw;
     }
-
     .enviar{
-
         font-family: sans-serif;
         background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
         width: 100px;
         height: 30px;
     }
-
     /*---fin contacto---*/
     /*---inicio footer---*/
-
-  .icons{
-        
-        width: 3vw;
-       
+  .icons{   
+        width: 3vw;  
     }
     /*---fin footer---*/
 }
@@ -1181,196 +841,131 @@
     /*---inicio header---*/
     .container__section1{
         background:black
-
     }
-    
     .titulo{
         text-shadow: 10px 3px 2px #696;
         letter-spacing: 30px;
-        word-spacing: 5px;
-        
+        word-spacing: 5px;   
     }
     .nombre{
         font-size: 50px;
     }
-    .lista__uno{
-        
+    .lista__uno{   
         width: 100vw;
         flex-direction: row;
         align-items:center;
         justify-content:space-around;  
         align-content: space-between;  
-
     }
     .contenido {
-
         font-size: 1.5rem;
     }
     /*---fin header---*/
     /*---inicio banner---*/
     .container__frase{
-
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100vw;
-        height: 60vh;
-              
+        height: 60vh;          
     }
     .frase{
         font-size: 4.0em;   
     }
     /*---fin banner---*/
     /*--- inicio about ---*/
-    .about{
-
-        
+    .about{    
         width: 100vw;
-        height: 65vh;
-        
+        height: 65vh;   
     }
     .imagen{
-    
         width: 19vw;
         height: 65vh;
     }
-
     .imagen__portafolio{
         height: 50vh;
         background: white;
-        border-radius: 5px;
-        
+        border-radius: 5px;    
     }
-    .texto__about{
-
-        
+    .texto__about{    
         width: 75vw;
-        height: 65vh;
-        
+        height: 65vh;    
     }
     .texto__about__informacion{
-
         width: 81vw;
         height: 35vh;
         font-size: 1.4rem;
         padding: 25px;
     }
     .button__cv{
-
         display: flex;
         justify-content: center;
         align-items: center;
         align-content: center;
         width: 100vw;
         height: 5vh;
-        background: none;
-        
-        
+        background: none;    
     }
-
     .button__cv__texto{
-
         border-radius: 8px ;
         width: 20vw;
-        font-size: 2rem;
-        
+        font-size: 2rem;   
     }
-    
     /*---fin about---*/
     /*---inicio work---*/
     .work{
-
         display: grid;
         grid-template-columns: 50vw 50vw;
         grid-template-rows: 50vh 50vh;
         width: 100vw;
         height: 70vh;
-        padding-top: 65px;
-        
+        padding-top: 65px;   
     }
-
     .imagen_proyectos{
-
         width: 50vw;
-        height: 50vh;
-        
-        
+        height: 50vh;   
     }
-    
-
     .imagen__proyectos__1{
-
-        width: 30vw;
-       
-        
+        width: 30vw;   
     }
-
     .imagen_servicios{
-
         width: 50vw;
         height: 50vh;
-
     }
-    
-    .imagen__servicios__1{
-        
-        width: 30vw;
-       
-        
+    .imagen__servicios__1{   
+        width: 30vw;   
     }
-
     .titulo__proyectos{
-
         width: 50vw;
-        height: 15vh;
-          
+        height: 15vh;     
     }
     .titulo__productos__01{
-
-        font-size: 50px;
-        
+        font-size: 50px;   
     }
-
     .titulo__servicios{
-
         width: 50vw;
-        height: 15vh;
-        
+        height: 15vh;   
     }
-
-    .titulo__servicios__01{
-
-       
+    .titulo__servicios__01{   
         font-size: 50px;
-        
-
     }
-
     /*---fin work---*/
         /*---inicio proyectos---*/
     .gallery-container{
-
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: 40vh;
         padding: 20px ;
         grid-gap: 10px;
         background:black;
-
-
     }
-
     .gallery__item{
         position: relative;
     }
-
     .gallery__img{
-
         width: 100%;
         height: 100%;
-        object-fit: cover;
-
-        
+        object-fit: cover;    
     }
     .gallery__title{
         position: absolute;
@@ -1378,46 +973,29 @@
         color: white;
         background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1));
         width: 100%;
-
-
     }
-
     .gallery__item:nth-child(3){
-
         grid-column-start: span 2;
     }
-
-
     .gallery__item:nth-child(4){
-
         grid-column-start: span 2;
         grid-row-start: span 2;
     }
-
     .gallery__item:nth-child(5){
-
         grid-row-start: span 2;
     }
-
     .gallery__item:nth-child(9){
-
         grid-column-start: span 3;
     }
-    
-
      /*---fin proyectos---*/
       /*---inicio servicio---*/
       .icon-container{
-
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         height: 75vh;
         grid-gap: 10px;
         background:black;
-
-
     }
-
     .gallery__icon{
         position: relative;
         display: flex;
@@ -1425,24 +1003,18 @@
         align-items: center;
         justify-content: center;
         align-content: center;
-        height: 35vh;
-        
+        height: 35vh;  
     }
-
     .gallery__img__png{
-
         width: 35%;
         object-fit: cover;
-          
     }
-
     .gallery__img__png:hover{
         border-radius:50%;
         -webkit-border-radius:50%;
         box-shadow: 0px 0px 15px 15px #696;
         -webkit-box-shadow: 0px 0px 15px 15px #696;
-}
-
+    }
     .gallery__title__icon{
         position: absolute;
         display: flex;
@@ -1452,91 +1024,61 @@
         color: white;
         background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1));
         width: 100%;
-
     }
-
     .gallery__icon:nth-child(1){
-
         grid-column-start: span 1;
     }
-
-
     .gallery__icon:nth-child(2){
-
-        grid-column-start: span 1;
-       
+        grid-column-start: span 1;   
     }
-
     .gallery__icon:nth-child(3){
-
         grid-row-start: span 1;
     }
-
     .gallery__icon:nth-child(4){
-
         grid-column-start: span 1;
     }
-    
     .text__service{
         color: white;
         height: 0vh;
-        width: 20vw;
-        
+        width: 20vw;   
     }
     /*---fin servicio---*/
     /*---inicio contacto---*/
-
      .contacto{
         width: 100vw;
         height: 75vh;
-
     }
     .formulario{
-
         height: 75vh;
         width: 100vw;
-        
-
     }
-
     .cuadro{
-
         color: white;
-        width: 30vw;
-        
+        width: 30vw;   
     }
-
     .form-control{
         width: 30vw;
         height: 3vh;
     }
-
     .form-label{
-
         display: flex;
         align-content: center;
         justify-content: center;
     }
-
     #exampleFormControlTextarea1{
-
         resize: none;
         width: 30vw;
     }
-
     .enviar{
-
         font-family: sans-serif;
         background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
         width: 100px;
         height: 30px;
     }
-
     /*---fin contacto---*/
     /*---inicio footer---*/
     .footer__icons{
-        
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -1546,13 +1088,10 @@
         height: 20vh;
         padding-bottom: 25px;
         padding-left: 10px;
-    }
-           
+    }     
     .icons{
         border: solid black 2px;
-        width: 2vw;
-       
+        width: 2vw; 
     }
-    /*---fin footer---*/
-   
+    /*---fin footer---*/  
 }
