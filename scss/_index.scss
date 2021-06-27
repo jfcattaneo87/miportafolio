@@ -3,17 +3,13 @@
     width: $width;
  }
 
- @mixin flex($display, $justifycontent, $alignitems) {
+ @mixin flex($display, $direction, $justifycontent, $alignitems, $aligncontent) {
+
 	display: $display;
+    flex-direction: $direction;
 	justify-content: $justifycontent;
 	align-items: $alignitems;
-
-}
-
-@mixin grid ($display, $justifyitems, $alignitems){
-    display: $grid;
-    justify-items: $stretch;
-    align-items: $stretch;
+    align-content: $aligncontent;
 }
 
 /*---inicio header---*/
@@ -33,11 +29,7 @@
 .titulo{
     
     grid-row: 1 / 2;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+    @include flex(flex, row, center, center, center);
     color: rgb(255, 255, 255);
     letter-spacing: 10px;
     word-spacing: 10px;
@@ -57,10 +49,7 @@
 .lista__uno{
     grid-row: 2 / 3;
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;    
+    @include flex(flex, column, center, center);  
 }
 .contenido {
     
@@ -68,36 +57,63 @@
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
-    text-decoration: underline;
-   
+    text-decoration: underline;   
 }
 .lista ul {
     background-color: none;
-    
-    
+   
 }
 .lista ul li {
     position: relative;   
 }
- 
 .lista ul li a:hover {
     color: rgb(97, 97, 97);   
 }
-
 .lista ul ul {
     display: none;
     position: absolute;
       
 }
-
 .lista ul li:hover>ul {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-end;
-    justify-content: flex-end;
+    @include flex(flex, column, flex-end, unset, flex-end);  
     padding-left: 50px;
     width: 40vw;
     z-index: 1;
-
 }
 /*---fin header---*/
+
+/*---inicio banner---*/
+.container__frase{
+    grid-row: 3 / 4;
+    position: relative;
+    @include sizes(100vw, 70vh);
+    display: flex;
+    padding-bottom: 80px;
+    
+}
+.frase{
+    position: relative;
+    @include flex(flex, unset, center, center, center);  
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 3px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    -webkit-animation: animate 5s linear infinite;
+}
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+  /*---fin banner---*/
