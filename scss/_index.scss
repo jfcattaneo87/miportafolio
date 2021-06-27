@@ -18,9 +18,7 @@
     display: grid;
     grid-template-rows: repeat(4, auto);
     @include sizes(100vw, 100vh);
-    background-image: linear-gradient(to top, white, black);
-
-    
+    background-image: linear-gradient(to top, white, black);   
 }   
 .container__1{
     @include sizes(100vw, 24vh);
