@@ -251,7 +251,7 @@
     grid-auto-rows: 35vh;
     padding: 20px ;
     grid-gap: 10px;
-    background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(255, 255, 255));
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(61, 61, 61));
 }
 .gallery__item{
     position: relative;
