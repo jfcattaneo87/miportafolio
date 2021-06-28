@@ -296,7 +296,7 @@
         height: 30vh;   
     }
     .gallery__img__png{
-        width: 35%;
+        width: 20%;
         object-fit: cover;     
     }
     .gallery__img__png:hover{
@@ -340,7 +340,7 @@
         height: 0vh;
         padding-bottom: 10px;
         text-align :center;
-        font-size: 1.2rem;
+        font-size: 0.5rem;
         font-family: sans-serif;      
     }
     /*---fin servicio---*/
@@ -510,7 +510,7 @@
         height: 40vh;   
     }
     .gallery__img__png{
-        width: 35%;
+        width: 25%;
         object-fit: cover;      
     }
     .gallery__img__png:hover{
@@ -552,7 +552,7 @@
         height: 0vh;
         padding-bottom: 10px;
         text-align: center;
-        font-size:1.2rem;
+        font-size:0.7rem;
         font-family: sans-serif;   
     }
     /*---fin servicio---*/
@@ -749,7 +749,7 @@
             height: 35vh;   
         }
         .gallery__img__png{
-            width: 35%;
+            width: 30%;
             object-fit: cover;   
         }
         .gallery__img__png:hover{
@@ -792,7 +792,7 @@
             height: 0vh;
             padding-bottom: 10px;
             text-align: center;
-            font-size:1.2rem;
+            font-size:0.8rem;
             font-family: sans-serif;    
         }
         /*---fin servicio---*/
@@ -1041,6 +1041,7 @@
         color: white;
         height: 0vh;
         width: 20vw;   
+        font-size: 1.0rem;
     }
     /*---fin servicio---*/
     /*---inicio contacto---*/
